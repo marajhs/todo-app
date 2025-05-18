@@ -1,0 +1,93 @@
+       
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+       }
+
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vh;
+        background-color: black;
+       }
+
+       h1, p {
+        color: white;
+       }
+       .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1b1b1b;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .inputbox {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #taskInput {
+            flex: 1;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+
+        #addbtn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        #addbtn:hover {
+            background-color: #45a049;
+        }
+
+        .tasks ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tasks ul li {
+            padding: 10px;
+            color: white;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space items evenly */
+            align-items: center; /* Vertically center items */
+        }
+
+        .tasks ul li:last-child {
+            border-bottom: none;
+        }
+
+        .tasks ul li span {
+            flex: 1; /* Allow the text to take up available space */
+            margin-right: 10px; /* Add some margin to the right of the text */
+        }
+
+        .tasks ul li button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .tasks ul li button:hover {
+            background-color: #d32f2f;
+        }
